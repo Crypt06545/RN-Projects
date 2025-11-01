@@ -1,18 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Board from "./components/Board";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <h1 className='bg-amber-900'>This is a heading</h1>
-      </div>
-    </>
-  )
+    <div className="bg-zinc-900 min-h-screen w-full flex justify-center items-center">
+      <Board />
+    </div>
+  );
 }
 
-export default App
+export default App;
